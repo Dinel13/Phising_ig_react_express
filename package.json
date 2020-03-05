@@ -1,0 +1,28 @@
+{
+  "name": "api_simple_node",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "index.js",
+  "scripts": {
+    "bul": "cd front && npm run build",
+    "ins": "cd front && npm install",
+    "heroku-postbuild": "npm run ins && npm run bul",
+    "start": "node index.js"
+  },
+  "author": "salah",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.2"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.2"
+  },
+  "engines": {
+    "node": "12.11.1",
+    "npm": "6.13.4"
+  }
+}
